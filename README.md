@@ -27,7 +27,7 @@ Vim
 
 The linux based Ubuntu 16.0.4 operating system is required for the operation of the program first.
 
-  Linux da ilk olarak apache tomcat yüklüyoruz.
+  First of all, we are installing apache tomcat8 on UBUNTU.
 ```
 sudo apt-get update
 sudo apt-get install default-jdk
