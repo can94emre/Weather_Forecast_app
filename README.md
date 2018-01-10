@@ -2,9 +2,6 @@
 
 We parse the json data from this application api with the python service. We fetch the parse according to the name of the city that the user wrote on the html page. The application displays the temperature of the city selected by the user.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -30,74 +27,62 @@ Vim
 
 The linux based Ubuntu 16.0.4 operating system is required for the operation of the program first.
 
-1- linux da ilk olarak apache tomcat yüklüyoruz.
+  Linux da ilk olarak apache tomcat yüklüyoruz.
 ```
 sudo apt-get update
 sudo apt-get install default-jdk
 sudo apt-get install tomcat8
-2- Then, install apache2.
+
+```
+  Then, install apache2.
+```
 sudo apt-get install apache2
-3- 
+```
+  Install python3.5 for for service work
+```
+sudo apt-get install python3.5
+```
+  And python pip
+```
+sudo apt-get install python3-pip
+pip3 -V
 ```
 
-And repeat
+  We need python flask module and requests module
+```
+sudo pip3 install flask
+sudo pip3 install requests
 
 ```
-until finished
-```
+ In order to run our service, in ubuntu terminal, we enter the file that is in our python service. We're running our service.
+ ```
+ python3.5 weather.py
+ 
+ ```
 
-End with an example of getting some data out of the system or using it for a little demo
+At the terminal after service run
+
+ ```
+  http://127.0.0.1:5000/
+  
+ ```
+
+Click here to open a link.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+The application is debugging while it is running.
+
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+We are writing our city index.html'de and show the temperature values of our city.
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Flask](http://flask.pocoo.org/) - The web api microframework used
+* [HTML](https://www.w3schools.com/html/) - Interface used
+* [PYTHON](https://www.python.org/) - Web service used
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
